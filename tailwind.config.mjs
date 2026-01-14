@@ -6,15 +6,7 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        cream: {
-          50: '#F5F2E8',
-        },
-      },
-      letterSpacing: {
-        tighter: '-0.04em',
-      },
-      lineHeight: {
-        '0.85': '0.85',
+        'stone-25': '#FAFAF9',
       },
     },
   },

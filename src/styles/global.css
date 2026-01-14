@@ -21,21 +21,20 @@
   }
 }
 
-/* Custom gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, #C9A961 0%, #8B7355 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-/* Selection color */
-::selection {
-  background-color: #C9A961;
-  color: white;
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
