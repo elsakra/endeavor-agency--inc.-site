@@ -5,19 +5,16 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      animation: {
-        'fade-up': 'fadeUp 0.6s ease-out',
-        'fade-in': 'fadeIn 0.6s ease-out',
+      colors: {
+        cream: {
+          50: '#F5F2E8',
+        },
       },
-      keyframes: {
-        fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
+      letterSpacing: {
+        tighter: '-0.04em',
+      },
+      lineHeight: {
+        '0.85': '0.85',
       },
     },
   },
