@@ -5,9 +5,6 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      colors: {
-        'stone-25': '#FAFAF9',
-      },
     },
   },
   plugins: [],

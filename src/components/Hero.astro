@@ -1,52 +1,48 @@
 ---
 ---
 
-<section id="home" class="relative min-h-screen bg-white overflow-hidden" data-module-key="hero" data-dominant-signal="image" data-hero-pattern="full-bleed-photo">
-  <!-- Full bleed background image -->
-  <div class="absolute inset-0">
-    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop" alt="Modern office building" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-gradient-to-r from-black to-stone-900"></div>
-  </div>
+<section id="home" class="relative min-h-screen overflow-hidden" data-hero-pattern="full-bleed-photo" data-module-key="hero" data-dominant-signal="headline">
+  <!-- Hero Background Image -->
+  <img 
+    src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=1600&q=95" 
+    alt="Executive boardroom"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
   
   <!-- Navigation -->
-  <nav class="relative z-20 py-6">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex items-center justify-between">
-        <a href="/" class="text-2xl font-black text-white tracking-tight">
-          ENDEAVOR
-        </a>
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#services" class="text-sm font-medium text-stone-400 hover:text-white transition-colors">Services</a>
-          <a href="#expertise" class="text-sm font-medium text-stone-400 hover:text-white transition-colors">Expertise</a>
-          <a href="#testimonials" class="text-sm font-medium text-stone-400 hover:text-white transition-colors">Success Stories</a>
-          <a href="#contact" class="text-sm font-medium text-stone-400 hover:text-white transition-colors">Contact</a>
-        </div>
+  <nav class="relative z-20 px-6 lg:px-8 py-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="/" class="text-2xl font-black text-white tracking-tight hover:text-amber-500 transition-colors duration-300">
+        ENDEAVOR
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#home" class="text-amber-500 font-medium transition-colors duration-300">Home</a>
+        <a href="#services" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Services</a>
+        <a href="#expertise" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Expertise</a>
+        <a href="#leadership" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Leadership</a>
+        <a href="#contact" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Contact</a>
       </div>
     </div>
   </nav>
   
-  <!-- Hero content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32 lg:py-40">
-    <div class="max-w-3xl">
-      <div class="space-y-8 animate-on-scroll">
-        <h1 class="text-7xl lg:text-8xl xl:text-9xl font-black -tracking-tight leading-none text-white">
-          LEAD<br/>WITH<br/>IMPACT
-        </h1>
-        <p class="text-lg lg:text-xl leading-relaxed font-normal text-stone-400 max-w-lg">
-          Transform your executive presence and drive organizational excellence with proven leadership strategies.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold bg-amber-600 text-white rounded-full shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300" data-button-recipe="primary">
-            Schedule Executive Consultation
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a href="#services" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold bg-white text-black rounded-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-            Explore Services
-          </a>
-        </div>
-      </div>
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 md:py-40 flex flex-col items-center justify-center min-h-[calc(100vh-96px)] text-center">
+    <h1 class="text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase text-white mb-8 leading-[0.9]" data-section-header-recipe="primary">
+      Executive Search<br/>Redefined
+    </h1>
+    <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl mb-16">
+      Connecting visionary leaders with transformative opportunities
+    </p>
+    <div class="flex flex-col sm:flex-row gap-6">
+      <a href="#contact" class="bg-amber-500 text-black px-10 py-5 text-lg font-bold uppercase tracking-wider rounded-full hover:bg-amber-600 transition-all duration-300 hover:scale-105 shadow-2xl shadow-amber-500/25" data-button-recipe="primary">
+        Schedule Executive Consultation
+      </a>
+      <a href="#services" class="bg-zinc-900 text-white px-10 py-5 text-lg font-bold uppercase tracking-wider rounded-full hover:bg-zinc-800 transition-all duration-300 border border-zinc-700" data-button-recipe="secondary">
+        View Our Process
+      </a>
     </div>
   </div>
 </section>

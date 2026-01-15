@@ -3,22 +3,22 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
 import Expertise from '../components/Expertise.astro';
+import Leadership from '../components/Leadership.astro';
 import Testimonials from '../components/Testimonials.astro';
 import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 ---
 
-<Layout title="Endeavor Agency - Executive Leadership Solutions">
-  <main data-layout-pattern="asymmetric" data-card-style="elevated" data-button-style="pill">
+<Layout title="Endeavor Agency - Executive Search Excellence">
+  <main data-layout-pattern="asymmetric" data-card-style="flat" data-button-style="pill">
     <Hero />
     <Services />
     <Expertise />
+    <Leadership />
     <Testimonials />
     <CTA />
     <Footer />
   </main>
+  <script src="../scripts/animations.ts"></script>
 </Layout>
-
-<script>
-  import '../scripts/animations.ts';
-</script>
