@@ -1,48 +1,87 @@
 ---
+import '../styles/global.css';
 ---
 
-<section id="home" class="relative min-h-screen overflow-hidden" data-hero-pattern="full-bleed-photo" data-module-key="hero" data-dominant-signal="headline">
-  <!-- Hero Background Image -->
-  <img 
-    src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=1600&q=95" 
-    alt="Executive boardroom"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
+<section id="home" class="relative min-h-screen overflow-hidden bg-slate-950 noise-texture" data-hero-pattern="full-bleed-photo" data-module-key="hero" data-dominant-signal="headline">
+  <!-- Full-bleed background image -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074" alt="Executive boardroom" class="w-full h-full object-cover opacity-30" />
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
+  </div>
   
-  <!-- Gradient Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+  <!-- Gradient Orbs -->
+  <div class="absolute top-0 left-1/5 w-[600px] h-[600px] bg-amber-500/30 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-0 right-1/5 w-[500px] h-[500px] bg-rose-600/20 rounded-full blur-[100px]"></div>
   
   <!-- Navigation -->
-  <nav class="relative z-20 px-6 lg:px-8 py-8">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <a href="/" class="text-2xl font-black text-white tracking-tight hover:text-amber-500 transition-colors duration-300">
-        ENDEAVOR
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <nav class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
+      <a href="/" class="text-2xl font-display font-bold text-white tracking-tight">
+        Endeavor Agency
       </a>
       <div class="hidden md:flex items-center gap-8">
-        <a href="#home" class="text-amber-500 font-medium transition-colors duration-300">Home</a>
-        <a href="#services" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Services</a>
-        <a href="#expertise" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Expertise</a>
-        <a href="#leadership" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Leadership</a>
-        <a href="#contact" class="text-white hover:text-amber-500 font-medium transition-colors duration-300">Contact</a>
+        <a href="#services" class="text-white/80 hover:text-white transition-colors duration-300">Services</a>
+        <a href="#leadership" class="text-white/80 hover:text-white transition-colors duration-300">Leadership</a>
+        <a href="#testimonials" class="text-white/80 hover:text-white transition-colors duration-300">Success Stories</a>
+        <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 text-slate-950 rounded-full font-medium hover:scale-105 hover:bg-amber-400 transition-all duration-300" data-button-recipe="primary">
+          Schedule Consultation
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   
   <!-- Hero Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 md:py-40 flex flex-col items-center justify-center min-h-[calc(100vh-96px)] text-center">
-    <h1 class="text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase text-white mb-8 leading-[0.9]" data-section-header-recipe="primary">
-      Executive Search<br/>Redefined
-    </h1>
-    <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl mb-16">
-      Connecting visionary leaders with transformative opportunities
-    </p>
-    <div class="flex flex-col sm:flex-row gap-6">
-      <a href="#contact" class="bg-amber-500 text-black px-10 py-5 text-lg font-bold uppercase tracking-wider rounded-full hover:bg-amber-600 transition-all duration-300 hover:scale-105 shadow-2xl shadow-amber-500/25" data-button-recipe="primary">
-        Schedule Executive Consultation
-      </a>
-      <a href="#services" class="bg-zinc-900 text-white px-10 py-5 text-lg font-bold uppercase tracking-wider rounded-full hover:bg-zinc-800 transition-all duration-300 border border-zinc-700" data-button-recipe="secondary">
-        View Our Process
-      </a>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 min-h-screen flex items-center">
+    <div class="grid md:grid-cols-5 gap-12 items-center w-full">
+      <div class="md:col-span-3 animate-on-scroll">
+        <h1 class="text-7xl md:text-8xl font-bold tracking-[-0.05em] leading-none text-white mb-8 font-display">
+          Executive<br/>
+          <span class="gradient-text">Leadership</span><br/>
+          Redefined
+        </h1>
+        <p class="text-xl leading-relaxed text-slate-400 max-w-2xl mb-12">
+          Transform your organization with strategic advisory services from industry-leading executives. We deliver results that matter.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-slate-950 rounded-full font-medium hover:scale-105 hover:bg-amber-400 transition-all duration-300 shadow-lg shadow-amber-500/50 hover:shadow-xl hover:shadow-amber-500/40" data-button-recipe="primary">
+            Get Started Today
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#services" class="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur text-white rounded-full font-medium hover:bg-white/20 transition-all duration-300 border border-white/20" data-button-recipe="secondary">
+            Explore Services
+          </a>
+        </div>
+      </div>
+      
+      <!-- Hero Stats -->
+      <div class="md:col-span-2 grid gap-6 animate-on-scroll" style="animation-delay: 200ms;">
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/20 hover:-translate-y-2 transition-all duration-300" data-card-recipe="primary">
+          <div class="text-5xl font-bold text-amber-500 mb-2">500+</div>
+          <div class="text-white/80">Executive Engagements</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/20 hover:-translate-y-2 transition-all duration-300" data-card-recipe="primary">
+          <div class="text-5xl font-bold text-amber-500 mb-2">$2.5B</div>
+          <div class="text-white/80">Value Created</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/20 hover:-translate-y-2 transition-all duration-300" data-card-recipe="primary">
+          <div class="text-5xl font-bold text-amber-500 mb-2">98%</div>
+          <div class="text-white/80">Client Satisfaction</div>
+        </div>
+      </div>
     </div>
   </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/0 -translate-x-1/0 animate-bounce">
+    <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
 </section>
+
+<script src="../scripts/animations.ts"></script>

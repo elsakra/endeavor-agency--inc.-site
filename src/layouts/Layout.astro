@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = 'Endeavor Agency - Executive Search Excellence' } = Astro.props;
+const { title, description = 'Endeavor Agency - Executive Advisory Services' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -16,9 +16,17 @@ const { title, description = 'Endeavor Agency - Executive Search Excellence' } =
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- SEO -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <slot />
